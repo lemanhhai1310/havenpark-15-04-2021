@@ -1,0 +1,17 @@
+.header{
+  box-shadow: 1px 1px 10px rgba(0,0,0,.15);
+  &__logo{
+    img{
+      height: 60px;
+    }
+  }
+  .uk-navbar-nav{
+    >li{
+      >a{
+        color: #ffffff;
+        @extend .fz-15;
+        font-family: $font-Roboto-Bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.home{
+  &__slider{
+    &__overlay{
+      background: rgba(0,0,0,.45);
+    }
+    &__title{
+      line-height: (44/34);
+      @extend .fz-34;
+      color: $color2 !important;
+      margin-bottom: 5px !important;
+      font-family: $font-Roboto-Black;
+    }
+    &__desc{
+      color: $color2;
+      @extend .fz-27;
+      line-height: (33/27);
+      margin-bottom: 10px;
+      font-family: $font-Roboto-Medium;
+    }
+  }
+}
