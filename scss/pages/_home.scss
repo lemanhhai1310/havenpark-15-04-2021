@@ -136,6 +136,7 @@
     }
   }
   &__blockDangky{
+    border-top: 5px solid #D2B465;
     $x: 41px;
     &__input{
       @extend .fz-14;

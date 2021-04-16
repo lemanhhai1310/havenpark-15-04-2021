@@ -40,7 +40,7 @@
                             <li><a href="#matbang">Mặt bằng</a></li>
                             <li><a href="#thietke">Thiết kế</a></li>
                             <li><a href="#chinhsach">Chính sách</a></li>
-                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#lienhe">Liên hệ</a></li>
                         </ul>
 
                     </div>

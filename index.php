@@ -222,7 +222,7 @@
 <!--/THIẾT KẾ MAY ĐO- TỐI ƯU TỪNG MILIMET-->
 
 <!--ĐĂNG KÝ NHẬN BẢNG GIÁ-->
-<div class="uk-section-small uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/bg02.jpg" uk-img>
+<div class="home__blockDangky uk-section-small uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/bg02.jpg" uk-img>
     <div class="uk-container">
         <h2 class="uk-h2 home__block01__card2__title uk-text-center">ĐĂNG KÝ NHẬN BẢNG GIÁ</h2>
         <form class="uk-grid-small uk-grid-30-m" uk-grid>
@@ -348,7 +348,40 @@
 <!--NƠI THIÊN NHIÊN LÀ ĐẶC QUYỀN-->
 <div class="uk-section-small uk-background-muted">
     <div class="uk-container">
+        <h2 class="uk-h2 home__block01__card2__title uk-text-center">NƠI THIÊN NHIÊN LÀ ĐẶC QUYỀN</h2>
+        <div uk-grid>
+            <div class="uk-width-1-3@m">
+                <p class="home__blockThietke__desc">Bấm vào link bên dưới để tải ngay toàn bộ hình ảnh thực tế các căn biệt thự dự án</p>
+                <p class="home__blockMatbang__desc">Haven Park Residences</p>
+                <div class="uk-text-left">
+                    <a href="" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="home__blockVitri__btn uk-border-rounded uk-button uk-button-secondary"><span uk-icon="icon: download; ratio: 1.2"></span>  TẢI XUỐNG NGAY + </a>
+                </div>
+            </div>
+            <div class="uk-width-expand">
+                <div class="uk-card uk-card-default uk-padding-small home__block01__card1">
+                    <div uk-slideshow="animation: fade;autoplay: true;autoplay-interval: 3000;">
 
+                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                            <ul class="uk-slideshow-items">
+                                <?php for ($i=1;$i<=11;$i++): ?>
+                                    <li>
+                                        <img src="images/hinhanh/hinh-anh-ecopark-<?= $i ?>-min.jpg" alt="" uk-cover>
+                                    </li>
+                                <?php endfor; ?>
+                            </ul>
+
+                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+                        </div>
+
+                        <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-position-bottom-right uk-position-small"></ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!--/NƠI THIÊN NHIÊN LÀ ĐẶC QUYỀN-->
