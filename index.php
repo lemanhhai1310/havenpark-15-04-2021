@@ -154,13 +154,17 @@
 <!--/TIỆN ÍCH ĐẶC QUYỀN DỰA THIÊN NHIÊN-->
 
 <!--MẶT BẰNG THIẾT KẾ HAVEN PARK RESIDENCES-->
-<div id="matbang" class="uk-section-small">
+<div id="matbang" class="uk-section-small uk-background-muted">
     <div class="uk-container">
         <h2 class="uk-h2 home__block01__card2__title uk-text-center">MẶT BẰNG THIẾT KẾ HAVEN PARK RESIDENCES</h2>
         <p class="home__blockMatbang__desc">Điểm khác biệt lớn nhất trong thiết kế dự án chung cư Haven Park đó chính là thiết kế không gian xanh ngay trong từng căn hộ “công viên trong đại công viên” mang tới không gian xanh thư giãn đầy riêng tư cho từng gia chủ. Toà tháp đôi “hoà vào làm một” với thiên nhiên, nắng, gió của Ecopark, mang đến một không gian sống – nơi con người được thiên nhiên yêu thương.</p>
         <figure>
             <img class="uk-width-1-1" src="images/mat-bang-tong-the-haven-park.jpg" alt="">
         </figure>
+        <p class="uk-text-center home__blockMatbang__desc">CLICK VÀO LINK DƯỚI ĐÂY ĐỂ TẢI TRỌN BỘ MẶT BẰNG FULL HD + FILE AUTOCAD</p>
+        <div class="uk-text-center">
+            <a href="" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="home__blockVitri__btn uk-border-rounded uk-button uk-button-secondary"><span uk-icon="icon: download; ratio: 1.2"></span> LINK TẢI MẶT BẰNG + FILE CAD</a>
+        </div>
     </div>
 </div>
 <!--/MẶT BẰNG THIẾT KẾ HAVEN PARK RESIDENCES-->
