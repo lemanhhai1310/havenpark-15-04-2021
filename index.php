@@ -6,7 +6,7 @@
 
     <ul class="uk-slideshow-items" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: .animation > *; delay: 500; repeat: true">
         <li>
-            <div class="uk-position-cover uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/chung-cu-haven-park-1.jpg" uk-img></div>
+            <div uk-parallax="bgy: -200" class="uk-position-cover uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/chung-cu-haven-park-1.jpg" uk-img></div>
             <div class="uk-position-cover home__slider__overlay"></div>
             <div class="uk-position-center uk-position-small uk-text-center animation">
                 <h2 class="uk-h2 home__slider__title uk-margin-remove">HAVEN PARK RESIDENCES ECOPARK</h2>
@@ -15,7 +15,7 @@
             </div>
         </li>
         <li>
-            <div class="uk-position-cover uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/chung-cu-haven-park-2.jpg" uk-img></div>
+            <div uk-parallax="bgy: -200" class="uk-position-cover uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/chung-cu-haven-park-2.jpg" uk-img></div>
             <div class="uk-position-cover home__slider__overlay"></div>
             <div class="uk-position-center uk-position-small uk-text-center animation">
                 <h2 class="uk-h2 home__slider__title uk-margin-remove">HAVEN PARK RESIDENCES ECOPARK</h2>
@@ -81,4 +81,28 @@
     </div>
 </div>
 <!--/TỔNG QUAN VỀ HAVEN PARK-->
+
+<!---->
+<div id="vitri" class="home__blockVitri uk-section-small">
+    <div class="uk-container">
+        <div class="uk-child-width-1-2@m" uk-grid>
+            <div>
+                <img src="images/vi-tri-haven-park-2.jpg" alt="">
+            </div>
+            <div>
+                <h2 class="uk-h2 home__block01__card2__title">VỊ TRÍ KIM CƯƠNG TRONG LÒNG ECOPARK</h2>
+                <p class="home__blockVitri__desc"><span>Haven Park</span> nằm trên tuyến giao thông vịnh đảo mới được nâng cấp rộng 30m, sở hữu không gian sống xanh hoàn toàn khác biệt, cùng rất nhiều liên kết tiện ích trong bán kính chưa tới 300m: Công viên, Trường học, Nhà hàng…</p>
+                <ul class="uk-list home__blockTongquan__card__list">
+                    <li>20 phút di chuyển đến Hồ Hoàn Kiếm</li>
+                    <li>45 phút đến cảng Hàng không Quốc tế Nội Bài</li>
+                    <li>20 – 30 phút đến các khu công nghiệp trọng điểm của Hưng Yên, Bắc Ninh</li>
+                </ul>
+                <div class="uk-text-center">
+                    <a href="" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="home__blockVitri__btn uk-border-rounded uk-button uk-button-secondary"><span uk-icon="icon: pencil; ratio: 1.2"></span> NHẬN THÔNG TIN DỰ ÁN MỚI NHẤT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/-->
 <?php require "template-parts/layouts/footer.php"; ?>

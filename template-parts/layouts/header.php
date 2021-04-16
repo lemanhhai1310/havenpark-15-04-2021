@@ -35,7 +35,7 @@
                         <ul class="uk-navbar-nav uk-visible@m" uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
                             <li><a href="#home">Trang chủ</a></li>
                             <li><a href="#tongquan">Tổng quan</a></li>
-                            <li><a href="#">Vị trí</a></li>
+                            <li><a href="#vitri">Vị trí</a></li>
                             <li><a href="#">Tiện ích</a></li>
                             <li><a href="#">Mặt bằng</a></li>
                             <li><a href="#">Thiết kế</a></li>

@@ -13,6 +13,9 @@
         }
       }
       >a{
+        &:hover{
+          color: $color2;
+        }
         color: #ffffff;
         @extend .fz-15;
         font-family: $font-Roboto-Bold;
