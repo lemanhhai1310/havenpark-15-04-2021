@@ -113,5 +113,26 @@
       @extend .fz-15;
       line-height: 1.5;
     }
+    &__card{
+      &__header{
+        padding-top: 10px;
+        &__tab{
+          >li{
+            >a{
+              color: #ffffff !important;
+              @extend .fz-15;
+              font-family: $font-Roboto-Bold;
+              padding: 10px 10px;
+            }
+            &.uk-active{
+              >a{
+                background: #ffffff !important;
+                color: #2d2d2d !important;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

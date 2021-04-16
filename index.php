@@ -172,7 +172,7 @@
 <!--THIẾT KẾ MAY ĐO- TỐI ƯU TỪNG MILIMET-->
 <div id="thietke" class="uk-section-small">
     <div class="uk-container">
-        <div class="uk-child-width-1-2@m" uk-grid>
+        <div class="uk-child-width-1-2@m uk-flex-center" uk-grid>
             <div>
                 <h2 class="uk-h2 home__block01__card2__title">THIẾT KẾ MAY ĐO- TỐI ƯU TỪNG MILIMET</h2>
                 <p class="home__blockThietke__desc">Được thiết kế bởi những kiến trúc sư hàng đầu đến từ Callision, tổ hợp căn hộ chung cư Haven Park mang tới không gian sống giữa thiên nhiên trong lòng đại công viên Ecopark.</p>
@@ -186,10 +186,46 @@
                 </ul>
             </div>
             <div>
-
+                <div class="uk-card uk-card-default">
+                    <div class="uk-background-02 uk-light home__blockThietke__card__header">
+                        <ul class="uk-flex-center home__blockThietke__card__header__tab uk-margin-remove-bottom" uk-tab="connect: .my-class">
+                            <li><a href="#">CĂN STUDIO</a></li>
+                            <li><a href="#">CĂN 1PN</a></li>
+                            <li><a href="#">CĂN 2PN</a></li>
+                            <li><a href="#">CĂN 3PN</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-card-body uk-background-muted">
+                        <ul class="uk-switcher uk-margin my-class">
+                            <li>
+                                <img src="images/studio-haven-park.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="images/1pn-haven-park.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="images/2pn-haven-park.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="images/3pn-haven-park.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-auto">
+                <img src="images/bang-gia-768x762.jpg" alt="">
             </div>
         </div>
     </div>
 </div>
 <!--/THIẾT KẾ MAY ĐO- TỐI ƯU TỪNG MILIMET-->
+
+<!--ĐĂNG KÝ NHẬN BẢNG GIÁ-->
+<div class="uk-section-small uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/bg02.jpg" uk-img>
+    <div class="uk-container">
+
+    </div>
+</div>
+<!--/ĐĂNG KÝ NHẬN BẢNG GIÁ-->
 <?php require "template-parts/layouts/footer.php"; ?>
