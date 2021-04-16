@@ -168,4 +168,28 @@
     </div>
 </div>
 <!--/MẶT BẰNG THIẾT KẾ HAVEN PARK RESIDENCES-->
+
+<!--THIẾT KẾ MAY ĐO- TỐI ƯU TỪNG MILIMET-->
+<div id="thietke" class="uk-section-small">
+    <div class="uk-container">
+        <div class="uk-child-width-1-2@m" uk-grid>
+            <div>
+                <h2 class="uk-h2 home__block01__card2__title">THIẾT KẾ MAY ĐO- TỐI ƯU TỪNG MILIMET</h2>
+                <p class="home__blockThietke__desc">Được thiết kế bởi những kiến trúc sư hàng đầu đến từ Callision, tổ hợp căn hộ chung cư Haven Park mang tới không gian sống giữa thiên nhiên trong lòng đại công viên Ecopark.</p>
+                <p class="home__blockMatbang__desc">Mặt bằng khu căn hộ Haven Park Residence sẽ bao gồm 16 căn trên 1 tầng, trong đó:</p>
+                <ul class="uk-list home__blockTongquan__card__list">
+                    <li>3 căn hộ Studio: 29.5m2</li>
+                    <li>1 căn hộ 1PN: 31m2</li>
+                    <li>6 căn hộ 2 PN – 2 WC: rộng 58m2</li>
+                    <li>2 căn hộ 2 PN – 2 WC: rộng 68m2</li>
+                    <li>4 căn hộ 3 PN – 2 WC: rộng 79m2, 86m2, 101m2 và 109m2</li>
+                </ul>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--/THIẾT KẾ MAY ĐO- TỐI ƯU TỪNG MILIMET-->
 <?php require "template-parts/layouts/footer.php"; ?>

@@ -107,4 +107,11 @@
       line-height: 1.5;
     }
   }
+  &__blockThietke{
+    &__desc{
+      color: #000;
+      @extend .fz-15;
+      line-height: 1.5;
+    }
+  }
 }
