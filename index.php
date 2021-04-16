@@ -82,7 +82,7 @@
 </div>
 <!--/TỔNG QUAN VỀ HAVEN PARK-->
 
-<!---->
+<!--VỊ TRÍ-->
 <div id="vitri" class="home__blockVitri uk-section-small">
     <div class="uk-container">
         <div class="uk-child-width-1-2@m" uk-grid>
@@ -104,5 +104,52 @@
         </div>
     </div>
 </div>
-<!--/-->
+<!--/VỊ TRÍ-->
+
+<!--TIỆN ÍCH ĐẶC QUYỀN DỰA THIÊN NHIÊN-->
+<div id="tienich" class="home__blockTienich uk-section-small uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/bg01.jpg" uk-img>
+    <div class="uk-container">
+        <h2 class="uk-h2 home__block01__card2__title uk-text-center">TIỆN ÍCH ĐẶC QUYỀN DỰA THIÊN NHIÊN</h2>
+        <div uk-grid>
+            <div class="uk-width-expand">
+                <div class="uk-card uk-card-default uk-padding-small home__block01__card1">
+                    <div uk-slideshow="animation: fade;autoplay: true;">
+
+                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                            <ul class="uk-slideshow-items">
+                                <?php for ($i=1;$i<=9;$i++): ?>
+                                <li>
+                                    <img src="images/tienich/tien-ich-chung-cu-haven-park-<?= $i ?>-min.jpg" alt="" uk-cover>
+                                </li>
+                                <?php endfor; ?>
+                            </ul>
+
+                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+                        </div>
+
+                        <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-position-bottom-right uk-position-small"></ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-2-5@m">
+                <p class="home__blockTienich__desc">🍀 <span>CÔNG VIÊN THỨ 5 CỦA ECOPARK</span>: Lớn bằng công viên mùa hạ, gấp 1.5 công viên mùa thu, bằng 3/4 công viên mùa xuân</p>
+                <p class="home__blockTienich__desc">🍀 <span>Ở ĐÓ CÓ CUỘC SỐNG NHƯ RESORT 6*</span>:</p>
+                <div class="uk-light">
+                    <ul class="uk-list home__blockTongquan__card__list">
+                        <li>Hồ bơi ngọc bích, phòng tập gym giữa thiên nhiên</li>
+                        <li>Nhà hàng thượng uyển, phòng họp mở giữa thiên nhiên</li>
+                        <li>Vườn cỏ nhung vọng nguyệt ven hồ</li>
+                    </ul>
+                </div>
+                <p class="home__blockTienich__desc">🍀 <span>HỆ THỐNG GIÁO DỤC CHUẨN QUỐC TẾ</span>: Trường liên cấp Đoàn Thị Điểm, Edison, Chadwick, trường anh quốc BUV, đại học Y khoa Tokio</p>
+                <p class="home__blockTienich__desc">🍀 <span>CÁC GIẢI THƯỞNG DANH GIÁ</span>: Khu đô thị có thiết kế cảnh quan đẹp nhất thế giới, Khu đô thị đáng sống nhất Thế Giới...</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/TIỆN ÍCH ĐẶC QUYỀN DỰA THIÊN NHIÊN-->
 <?php require "template-parts/layouts/footer.php"; ?>

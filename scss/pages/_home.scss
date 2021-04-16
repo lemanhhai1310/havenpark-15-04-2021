@@ -89,4 +89,14 @@
       font-family: $font-Roboto-Bold;
     }
   }
+  &__blockTienich{
+    &__desc{
+      @extend .fz-15;
+      color: #ffffff;
+      line-height: 1.5;
+      span{
+        color: $color4;
+      }
+    }
+  }
 }
