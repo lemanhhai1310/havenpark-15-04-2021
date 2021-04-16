@@ -271,4 +271,61 @@
     </div>
 </div>
 <!--/TƯ VẤN HỒ SƠ PHÁP LÝ-->
+
+<!--CHÍNH SÁCH BÁN HÀNG & GIÁ BÁN-->
+<div id="chinhsach" class="uk-section-small uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/bg03.jpg" uk-img>
+    <div class="uk-container">
+        <h2 class="uk-h2 home__block01__card2__title uk-text-center">TƯ VẤN HỒ SƠ PHÁP LÝ</h2>
+        <p class="home__blockChinhsach__desc uk-text-center">Những chính sách bán hàng ưu đãi ngân hàng những chính sách chiết khấu trực tiếp vào giá vô cùng hấp dẫn sẽ được gửi tới những khách hàng đầu tiên.</p>
+        <div uk-grid>
+            <div class="uk-width-expand">
+                <ul class="uk-list home__blockChinhsach__list">
+                    <li>- CĂN STUDIO: TỪ 1.2 - 1.5 TY</li>
+                    <li>- CĂN 1PN: TỪ 1.3 - 1.6 TY</li>
+                    <li>- CĂN 2PN: TỪ 2.1 - 3.1 TY</li>
+                    <li>- CĂN 3PN: TỪ 3.3 - 5.6 TY</li>
+                </ul>
+                <p class="home__blockChinhsach__txt"><span>Ghi chú:</span> Chính sách bán hàng và tiến độ thanh toán mới nhất từ chủ đầu tư sẽ được gửi đến quý khách hàng dạng file PDF, quý khách hàng vui lòng đăng kí thông tin để nhận file PDF ngay</p>
+                <figure class="uk-text-center">
+                    <img src="images/logo-havenpark-w.png" alt="">
+                </figure>
+            </div>
+            <div class="uk-width-1-3@m">
+                <div class="uk-card uk-box-shadow-small uk-background-muted uk-card-body uk-border-rounded">
+                    <form>
+                        <fieldset class="uk-fieldset">
+                            <legend class="uk-legend home__blockChinhsach__Form__title uk-text-center">ĐĂNG KÝ ĐỂ NHẬN NGAY BẢNG GIÁ & THÔNG TIN DỰ ÁN</legend>
+                            <p class="home__blockChinhsach__Form__desc uk-text-center">Căn đẹp đúng ý, giá tốt nhất thị trường</p>
+                            <div class="uk-margin">
+                                <input uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="text" placeholder="Họ tên*">
+                            </div>
+                            <div class="uk-margin">
+                                <input uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="text" placeholder="Email*">
+                            </div>
+                            <div class="uk-margin">
+                                <input uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="text" placeholder="Số điện thoại*">
+                            </div>
+                            <button type="submit" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="uk-button uk-button-secondary uk-width-1-1 home__blockDangky__btn">NHẬN NGAY</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/CHÍNH SÁCH BÁN HÀNG & GIÁ BÁN-->
+
+<!---->
+<div class="uk-text-center">
+    <img src="images/thanh-pho-giao-duc-nghi-duong.jpg" alt="">
+</div>
+<!--/-->
+
+<!---->
+<div class="uk-section-small">
+    <div class="uk-container">
+
+    </div>
+</div>
+<!--/-->
 <?php require "template-parts/layouts/footer.php"; ?>

@@ -165,4 +165,44 @@
       line-height: (28/18);
     }
   }
+  &__blockChinhsach{
+    &__Form{
+      &__title{
+        @extend .fz-19;
+        font-family: $font-Roboto-Bold;
+        line-height: (28/19);
+        color: $color1;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      &__desc{
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #000;
+        line-height: 1.5;
+        @extend .fz-15;
+      }
+    }
+    &__txt{
+      @extend .fz-15;
+      color: #ffffff;
+      font-family: $font-Roboto-LightItalic;
+      span{
+        font-family: $font-Roboto-Bold;
+      }
+    }
+    &__desc{
+      color: #ffffff;
+      line-height: 1.5;
+      @extend .fz-15;
+    }
+    &__list{
+      >li{
+        font-family: $font-AndaleMono;
+        @extend .fz-19;
+        line-height: 1.5;
+        color: #ffffff;
+      }
+    }
+  }
 }
