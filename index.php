@@ -242,4 +242,33 @@
     </div>
 </div>
 <!--/ĐĂNG KÝ NHẬN BẢNG GIÁ-->
+
+<!--TƯ VẤN HỒ SƠ PHÁP LÝ-->
+<div class="uk-section-small">
+    <div class="uk-container">
+        <h2 class="uk-h2 home__block01__card2__title uk-text-center">TƯ VẤN HỒ SƠ PHÁP LÝ</h2>
+        <div class="uk-child-width-1-2@m" uk-grid>
+            <div>
+                <img class="uk-width-1-1" src="images/chung-cu-haven-park-3.jpg" alt="">
+            </div>
+            <div>
+                <div class="uk-padding-small uk-background-01 uk-text-center uk-light">
+                    <span class="home__blockTuvan__txt">ĐƠN VỊ PHÂN PHỐI CHÍNH THỨC CĐT ECOPARK</span>
+                </div>
+                <p class="uk-text-center home__blockTuvan__desc">Luôn sẵn sàng Hỗ Trợ quý khách hàng mọi lúc, mọi nơi</p>
+                <ul class="uk-list home__blockTongquan__card__list">
+                    <li>Là đơn vị có nhiều năm kinh nghiệm bất động sản.</li>
+                    <li>Am hiểu sâu sắc và cặn kẽ pháp lí và quy định của luật pháp.</li>
+                    <li>Tư vấn thông tin chính xác, chuyên nghiệp và đầy đủ nhất.</li>
+                    <li>Hỗ trợ khách hàng giải quyết mọi vấn đề về thủ tục, hồ sơ, pháp lí, vay vốn ngân hàng đến khi khách hàng nhận nhà và ổn định cuộc sống.</li>
+                    <li>Không thu bất kỳ khoản phụ phí với khách hàng khi liên hệ qua trang web hoặc liên hệ trực tiếp.</li>
+                </ul>
+                <div class="uk-text-center">
+                    <a href="" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="home__blockVitri__btn uk-border-rounded uk-button uk-button-secondary"><span uk-icon="icon: pencil; ratio: 1.2"></span> ĐĂNG KÝ TƯ VẤN - HỒ SƠ PHÁP LÝ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/TƯ VẤN HỒ SƠ PHÁP LÝ-->
 <?php require "template-parts/layouts/footer.php"; ?>

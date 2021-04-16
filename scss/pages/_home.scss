@@ -138,7 +138,7 @@
   &__blockDangky{
     $x: 41px;
     &__input{
-      @extend .fz-15;
+      @extend .fz-14;
       &.uk-form-large{
         height: #{$x} !important;
       }
@@ -148,6 +148,21 @@
       &.uk-button-large{
         line-height: calc(#{$x} - 2px) !important;
       }
+    }
+  }
+  &__blockTuvan{
+    &__txt{
+      text-transform: uppercase;
+      line-height: (25.2/18);
+      color: #ffffff !important;
+      @extend .fz-18;
+      font-family: $font-Roboto-Bold;
+    }
+    &__desc{
+      @extend .fz-19;
+      color: $color2;
+      font-family: $font-Roboto-Bold;
+      line-height: (28/18);
     }
   }
 }
