@@ -40,10 +40,18 @@
             <div>
                 <div class="uk-card uk-card-body home__block01__card2 uk-text-center uk-light">
                     <h2 class="uk-h2 home__block01__card2__title">HAVEN PARK RESIDENCES</h2>
-                    <div>Cơ hội vàng cho nhà đầu tư may mắn!</div>
+                    <p class="home__block01__card2__txt1">Cơ hội vàng cho nhà đầu tư may mắn!</p>
                     <div>
-                        <p>Khách hàng chỉ phải đóng <span>15%</span>, sở hữu ngay căn hộ</p>
+                        <p class="home__block01__card2__txt2">Khách hàng chỉ phải đóng <span>15%</span>, sở hữu ngay căn hộ</p>
+                        <p class="home__block01__card2__txt3">Hỗ trợ vay <span>80%</span> GTCH, <span>0%</span> lãi suất trong 24 tháng</p>
+                        <p class="home__block01__card2__txt3">Thanh toán sớm chiết khấu <span>11%</span> giá trị sản phẩm</p>
+                        <p class="home__block01__card2__txt2">Thanh toán theo tiến độ chiết khấu <span>2%</span></p>
+                        <p class="home__block01__card2__txt3">Ưu tiên chọn căn, chọn tầng đẹp</p>
+                        <p class="home__block01__card2__txt3">Quà tặng lên đến <span>8</span> chỉ vàng cho <span>68</span> khách hàng đầu tiền</p>
                     </div>
+                    <h2 class="uk-h2 home__block01__card2__title home__block01__card2__title--c1">HOTLINE: 0859.966.266</h2>
+                    <p class="home__block01__card2__txt4">ĐĂNG KÍ NHẬN THÔNG TIN VÀ XEM CĂN HỘ MẪU TẠI ĐÂY</p>
+                    <a href="#modal-dky-outside" uk-toggle class="home__block01__card2__btn uk-button uk-button-default uk-button-large"><span uk-icon="icon: download; ratio: 1.2"></span> TẢI XUỐNG NGAY</a>
                 </div>
             </div>
             <div>

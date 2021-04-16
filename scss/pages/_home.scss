@@ -44,7 +44,41 @@
           @extend .fz-24;
         }
       }
-
+      &__txt1{
+        margin-bottom: 10px;
+        color: #b3695f;
+        @extend .fz-19;
+        font-family: $font-Roboto-Bold;
+      }
+      &__txt2{
+        @extend .fz-15;
+        color: #ffffff;
+        line-height: (22/15);
+        span{
+          color: #ffcc00;
+          font-family: $font-Roboto-Bold;
+        }
+      }
+      &__txt3{
+        @extend .fz-17;
+        color: #ffffff;
+        line-height: (22/15);
+        span{
+          color: #ffcc00;
+          font-family: $font-Roboto-Bold;
+        }
+      }
+      &__txt4{
+        @extend .fz-15;
+        color: #ffffff;
+        line-height: (22/15);
+      }
+      &__btn{
+        animation: wigglems 4s 2s infinite;
+        border-color: $color2 !important;
+        color: $color2 !important;
+        font-family: $font-Roboto-Bold;
+      }
     }
   }
   &__blockTongquan{
