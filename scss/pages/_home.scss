@@ -205,4 +205,22 @@
       }
     }
   }
+  &__blockLydo{
+    &__overlay{
+      background: #2C3A2DAD;
+    }
+    &__title{
+      @extend .fz-26;
+      color: #ffffff;
+      line-height: (36/26);
+      font-family: $font-Roboto-Bold;
+      text-shadow: #000 5px 3px 4px;
+    }
+    &__txt{
+      color: $color2;
+      @extend .fz-18;
+      font-family: $font-Roboto-Bold;
+      line-height: (25/18);
+    }
+  }
 }

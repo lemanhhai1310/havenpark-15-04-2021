@@ -321,11 +321,35 @@
 </div>
 <!--/-->
 
-<!---->
-<div class="uk-section-small">
+<!--4 LÝ DO NÊN SỞ HỮU HAVEN PARK-->
+<div class="uk-section-small uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/chung-cu-haven-park-2.jpg" uk-img>
+    <div class="uk-container">
+        <h2 class="uk-h2 home__blockLydo__title uk-text-center">4 LÝ DO NÊN SỞ HỮU HAVEN PARK</h2>
+        <div uk-scrollspy="cls: uk-animation-slide-bottom-small; target: .animation; delay: 500; repeat: true" class="uk-child-width-1-2@m uk-grid-match uk-grid-small uk-grid-30-m" uk-grid>
+            <?php
+            $data = array(
+                'MỘT SẢN PHẨM CỦA ECOPARK',
+                'CÔNG VIÊN GIỮA ĐẠI CÔNG VIÊN',
+                'TẦM NHÌN LÀ ĐẶC QUYỀN',
+                'THIẾT KẾ HÒA CÙNG THIÊN NHIÊN',
+            );
+            foreach ($data as $k => $v): ?>
+            <div>
+                <div class="uk-padding home__blockLydo__overlay animation uk-text-center">
+                    <span class="home__blockLydo__txt"><?= $v; ?></span>
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</div>
+<!--/4 LÝ DO NÊN SỞ HỮU HAVEN PARK-->
+
+<!--NƠI THIÊN NHIÊN LÀ ĐẶC QUYỀN-->
+<div class="uk-section-small uk-background-muted">
     <div class="uk-container">
 
     </div>
 </div>
-<!--/-->
+<!--/NƠI THIÊN NHIÊN LÀ ĐẶC QUYỀN-->
 <?php require "template-parts/layouts/footer.php"; ?>
