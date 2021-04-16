@@ -11,7 +11,7 @@
             <div class="uk-position-center uk-position-small uk-text-center animation">
                 <h2 class="uk-h2 home__slider__title uk-margin-remove">HAVEN PARK RESIDENCES ECOPARK</h2>
                 <p class="home__slider__desc uk-margin-remove">CÔNG VIÊN TRONG ĐẠI CÔNG VIÊN</p>
-                <div><a href="" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="uk-button uk-button-secondary home__slider__btn">ĐĂNG KÝ NHẬN THÔNG TIN</a></div>
+                <div><a href="#modal-dky-outside" uk-toggle class="uk-button uk-button-secondary home__slider__btn uk-button-large">ĐĂNG KÝ NHẬN THÔNG TIN</a></div>
             </div>
         </li>
         <li>
@@ -20,7 +20,7 @@
             <div class="uk-position-center uk-position-small uk-text-center animation">
                 <h2 class="uk-h2 home__slider__title uk-margin-remove">HAVEN PARK RESIDENCES ECOPARK</h2>
                 <p class="home__slider__desc uk-margin-remove">CÔNG VIÊN TRONG ĐẠI CÔNG VIÊN</p>
-                <div><a href="" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="uk-button uk-button-secondary home__slider__btn">ĐĂNG KÝ NHẬN THÔNG TIN</a></div>
+                <div><a href="#modal-dky-outside" uk-toggle class="uk-button uk-button-secondary home__slider__btn uk-button-large">ĐĂNG KÝ NHẬN THÔNG TIN</a></div>
             </div>
         </li>
     </ul>
@@ -98,7 +98,7 @@
                     <li>20 – 30 phút đến các khu công nghiệp trọng điểm của Hưng Yên, Bắc Ninh</li>
                 </ul>
                 <div class="uk-text-center">
-                    <a href="" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="home__blockVitri__btn uk-border-rounded uk-button uk-button-secondary"><span uk-icon="icon: pencil; ratio: 1.2"></span> NHẬN THÔNG TIN DỰ ÁN MỚI NHẤT</a>
+                    <a href="#modal-dky-outside" uk-toggle class="uk-button-large home__blockVitri__btn uk-border-rounded uk-button uk-button-secondary"><span uk-icon="icon: pencil; ratio: 1.2"></span> NHẬN THÔNG TIN DỰ ÁN MỚI NHẤT</a>
                 </div>
             </div>
         </div>
@@ -163,7 +163,7 @@
         </figure>
         <p class="uk-text-center home__blockMatbang__desc">CLICK VÀO LINK DƯỚI ĐÂY ĐỂ TẢI TRỌN BỘ MẶT BẰNG FULL HD + FILE AUTOCAD</p>
         <div class="uk-text-center">
-            <a href="" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="home__blockVitri__btn uk-border-rounded uk-button uk-button-secondary"><span uk-icon="icon: download; ratio: 1.2"></span> LINK TẢI MẶT BẰNG + FILE CAD</a>
+            <a href="#modal-dky-outside" uk-toggle class="uk-button-large home__blockVitri__btn uk-border-rounded uk-button uk-button-secondary"><span uk-icon="icon: download; ratio: 1.2"></span> LINK TẢI MẶT BẰNG + FILE CAD</a>
         </div>
     </div>
 </div>
@@ -264,7 +264,7 @@
                     <li>Không thu bất kỳ khoản phụ phí với khách hàng khi liên hệ qua trang web hoặc liên hệ trực tiếp.</li>
                 </ul>
                 <div class="uk-text-center">
-                    <a href="" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="home__blockVitri__btn uk-border-rounded uk-button uk-button-secondary"><span uk-icon="icon: pencil; ratio: 1.2"></span> ĐĂNG KÝ TƯ VẤN - HỒ SƠ PHÁP LÝ</a>
+                    <a href="#modal-dky-outside" uk-toggle class="uk-button-large home__blockVitri__btn uk-border-rounded uk-button uk-button-secondary"><span uk-icon="icon: pencil; ratio: 1.2"></span> ĐĂNG KÝ TƯ VẤN - HỒ SƠ PHÁP LÝ</a>
                 </div>
             </div>
         </div>
@@ -275,7 +275,7 @@
 <!--CHÍNH SÁCH BÁN HÀNG & GIÁ BÁN-->
 <div id="chinhsach" class="uk-section-small uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/bg03.jpg" uk-img>
     <div class="uk-container">
-        <h2 class="uk-h2 home__block01__card2__title uk-text-center">TƯ VẤN HỒ SƠ PHÁP LÝ</h2>
+        <h2 class="uk-h2 home__block01__card2__title uk-text-center">CHÍNH SÁCH BÁN HÀNG & GIÁ BÁN</h2>
         <p class="home__blockChinhsach__desc uk-text-center">Những chính sách bán hàng ưu đãi ngân hàng những chính sách chiết khấu trực tiếp vào giá vô cùng hấp dẫn sẽ được gửi tới những khách hàng đầu tiên.</p>
         <div uk-grid>
             <div class="uk-width-expand">
@@ -354,7 +354,7 @@
                 <p class="home__blockThietke__desc">Bấm vào link bên dưới để tải ngay toàn bộ hình ảnh thực tế các căn biệt thự dự án</p>
                 <p class="home__blockMatbang__desc">Haven Park Residences</p>
                 <div class="uk-text-left">
-                    <a href="" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="home__blockVitri__btn uk-border-rounded uk-button uk-button-secondary"><span uk-icon="icon: download; ratio: 1.2"></span>  TẢI XUỐNG NGAY + </a>
+                    <a href="#modal-dky-outside" uk-toggle class="uk-button-large home__blockVitri__btn uk-border-rounded uk-button uk-button-secondary"><span uk-icon="icon: download; ratio: 1.2"></span>  TẢI XUỐNG NGAY + </a>
                 </div>
             </div>
             <div class="uk-width-expand">
