@@ -224,7 +224,21 @@
 <!--ĐĂNG KÝ NHẬN BẢNG GIÁ-->
 <div class="uk-section-small uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/bg02.jpg" uk-img>
     <div class="uk-container">
-
+        <h2 class="uk-h2 home__block01__card2__title uk-text-center">ĐĂNG KÝ NHẬN BẢNG GIÁ</h2>
+        <form class="uk-grid-small uk-grid-30-m" uk-grid>
+            <div class="uk-width-1-4@s">
+                <input uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="text" placeholder="Họ tên">
+            </div>
+            <div class="uk-width-1-4@s">
+                <input uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="text" placeholder="Điện thoại">
+            </div>
+            <div class="uk-width-1-4@s">
+                <input uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="text" placeholder="Email">
+            </div>
+            <div class="uk-width-1-4@s">
+                <button type="submit" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="uk-button uk-button-secondary uk-width-1-1 home__blockDangky__btn">NHẬN NGAY</button>
+            </div>
+        </form>
     </div>
 </div>
 <!--/ĐĂNG KÝ NHẬN BẢNG GIÁ-->

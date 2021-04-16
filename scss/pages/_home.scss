@@ -135,4 +135,19 @@
       }
     }
   }
+  &__blockDangky{
+    $x: 41px;
+    &__input{
+      @extend .fz-15;
+      &.uk-form-large{
+        height: #{$x} !important;
+      }
+    }
+    &__btn{
+      background: $color2;
+      &.uk-button-large{
+        line-height: calc(#{$x} - 2px) !important;
+      }
+    }
+  }
 }

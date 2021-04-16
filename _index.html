@@ -1,10 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
+    <script src="/__prepros.js"></script>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Chung cư Haven Park Ecopark - Chính sách bán hàng mới nhất - Trang chủ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1618554286">
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js"></script>
 </head>
-<body>
+<body class="isHome">
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2428809380682169"
+     logged_in_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi"
+     logged_out_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi">
+</div>
+<script>
+    defer(function() {
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v5.0'
+            });
+        };
 
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, 5000);
+</script><section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+    <div uk-sticky="">
+        <div class="header uk-background-01">
+            <div class="uk-container uk-padding-remove">
+                <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+
+                    <div class="uk-navbar-left">
+                        <a href="." class="uk-navbar-item uk-logo header__logo"><img src="images/logo-havenpark-w.png" alt=""></a>
+                    </div>
+
+                    <div class="uk-navbar-right">
+
+                        <ul class="uk-navbar-nav uk-visible@m" uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
+                            <li><a href="#home">Trang chủ</a></li>
+                            <li><a href="#tongquan">Tổng quan</a></li>
+                            <li><a href="#vitri">Vị trí</a></li>
+                            <li><a href="#tienich">Tiện ích</a></li>
+                            <li><a href="#matbang">Mặt bằng</a></li>
+                            <li><a href="#thietke">Thiết kế</a></li>
+                            <li><a href="#">Chính sách</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </div><!--Slider-->
+    <div id="home" class="home__slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push;ratio: 1400:789;min-height: 400; max-height: 560">
+
+        <ul class="uk-slideshow-items" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: .animation > *; delay: 500; repeat: true">
+            <li>
+                <div uk-parallax="bgy: -200" class="uk-position-cover uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/chung-cu-haven-park-1.jpg" uk-img></div>
+                <div class="uk-position-cover home__slider__overlay"></div>
+                <div class="uk-position-center uk-position-small uk-text-center animation">
+                    <h2 class="uk-h2 home__slider__title uk-margin-remove">HAVEN PARK RESIDENCES ECOPARK</h2>
+                    <p class="home__slider__desc uk-margin-remove">CÔNG VIÊN TRONG ĐẠI CÔNG VIÊN</p>
+                    <div><a href="" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="uk-button uk-button-secondary home__slider__btn">ĐĂNG KÝ NHẬN THÔNG TIN</a></div>
+                </div>
+            </li>
+            <li>
+                <div uk-parallax="bgy: -200" class="uk-position-cover uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/chung-cu-haven-park-2.jpg" uk-img></div>
+                <div class="uk-position-cover home__slider__overlay"></div>
+                <div class="uk-position-center uk-position-small uk-text-center animation">
+                    <h2 class="uk-h2 home__slider__title uk-margin-remove">HAVEN PARK RESIDENCES ECOPARK</h2>
+                    <p class="home__slider__desc uk-margin-remove">CÔNG VIÊN TRONG ĐẠI CÔNG VIÊN</p>
+                    <div><a href="" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="uk-button uk-button-secondary home__slider__btn">ĐĂNG KÝ NHẬN THÔNG TIN</a></div>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-position-bottom-center"></ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+    </div>
+    <!--/Slider-->
+
+    <!--HAVEN PARK RESIDENCES-->
+    <div uk-parallax="bgy: -200" class="home__block01 uk-background-cover uk-background-norepeat uk-background-center-center uk-section-small" data-src="images/bg04.jpg" uk-img>
+        <div class="uk-container">
+            <div class="uk-child-width-1-2@m uk-grid-match uk-grid-small uk-grid-30-m" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-body home__block01__card2 uk-text-center uk-light">
+                        <h2 class="uk-h2 home__block01__card2__title">HAVEN PARK RESIDENCES</h2>
+                        <div>Cơ hội vàng cho nhà đầu tư may mắn!</div>
+                        <div>
+                            <p>Khách hàng chỉ phải đóng <span>15%</span>, sở hữu ngay căn hộ</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-padding-small home__block01__card1">
+                        <img src="images/anh_doi2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/HAVEN PARK RESIDENCES-->
+
+    <!--TỔNG QUAN VỀ HAVEN PARK-->
+    <div id="tongquan" uk-parallax="bgy: -200" class="home__blockTongquan uk-section-small uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/chung-cu-haven-park-1.jpg" uk-img>
+        <div class="uk-container">
+            <div class="" uk-grid>
+                <div class="uk-width-3-5@m">
+                    <div class="uk-card uk-card-body home__blockTongquan__card uk-border-rounded uk-light">
+                        <h2 class="uk-h2 home__block01__card2__title">TỔNG QUAN VỀ HAVEN PARK</h2>
+                        <div class="home__blockTongquan__card__desc">Siêu phẩm nghỉ dưỡng đẳng cấp nhất Hà Nội</div>
+                        <ul class="uk-list home__blockTongquan__card__list">
+                            <li><span>Tên dự án: Haven Park Residences</span></li>
+                            <li><span>Vị trí:</span> Phía tây Ecopark – cung đường Vịnh Đảo KĐT Ecopark, nằm trên tuyến phố đi bộ Hàn Quốc 2,5km, trái tim giải trí của Ecopark</li>
+                            <li><span>Quy mô:</span> 2 tòa tháp biểu tượng 41 tầng / 1.248 căn hộ</li>
+                            <li><span>Cảnh quan:</span> 50ha cảnh quan cây xanh & mặt nước</li>
+                            <li><span>Mật độ:</span> 16 căn hộ/ tầng điển hình</li>
+                            <li><span>Sản phẩm:</span> 6 loại căn hộ điển hình và 4 loại căn hộ đặc biệt (Studio; 1PN; 2PN; 2PN Delux; 3PN; 3 PN Delux Pool Villa, Mezza, Duplex, Siêu Penthouse)</li>
+                            <li><span>Tiến độ:</span> Đang thi công</li>
+                            <li><span>Thời gian bàn giao:</span> quý I/2023</li>
+                            <li><span>Hình thức sở hữu:</span> Lâu dài với người Việt Nam; 50 năm với người nước ngoài</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/TỔNG QUAN VỀ HAVEN PARK-->
+
+    <!--VỊ TRÍ-->
+    <div id="vitri" class="home__blockVitri uk-section-small">
+        <div class="uk-container">
+            <div class="uk-child-width-1-2@m" uk-grid>
+                <div>
+                    <img src="images/vi-tri-haven-park-2.jpg" alt="">
+                </div>
+                <div>
+                    <h2 class="uk-h2 home__block01__card2__title">VỊ TRÍ KIM CƯƠNG TRONG LÒNG ECOPARK</h2>
+                    <p class="home__blockVitri__desc"><span>Haven Park</span> nằm trên tuyến giao thông vịnh đảo mới được nâng cấp rộng 30m, sở hữu không gian sống xanh hoàn toàn khác biệt, cùng rất nhiều liên kết tiện ích trong bán kính chưa tới 300m: Công viên, Trường học, Nhà hàng…</p>
+                    <ul class="uk-list home__blockTongquan__card__list">
+                        <li>20 phút di chuyển đến Hồ Hoàn Kiếm</li>
+                        <li>45 phút đến cảng Hàng không Quốc tế Nội Bài</li>
+                        <li>20 – 30 phút đến các khu công nghiệp trọng điểm của Hưng Yên, Bắc Ninh</li>
+                    </ul>
+                    <div class="uk-text-center">
+                        <a href="" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="home__blockVitri__btn uk-border-rounded uk-button uk-button-secondary"><span uk-icon="icon: pencil; ratio: 1.2"></span> NHẬN THÔNG TIN DỰ ÁN MỚI NHẤT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/VỊ TRÍ-->
+
+    <!--TIỆN ÍCH ĐẶC QUYỀN DỰA THIÊN NHIÊN-->
+    <div id="tienich" class="home__blockTienich uk-section-small uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/bg01.jpg" uk-img>
+        <div class="uk-container">
+            <h2 class="uk-h2 home__block01__card2__title uk-text-center">TIỆN ÍCH ĐẶC QUYỀN DỰA THIÊN NHIÊN</h2>
+            <div uk-grid>
+                <div class="uk-width-expand">
+                    <div class="uk-card uk-card-default uk-padding-small home__block01__card1">
+                        <div uk-slideshow="animation: fade;autoplay: true;">
+
+                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                                <ul class="uk-slideshow-items">
+                                    <li>
+                                        <img src="images/tienich/tien-ich-chung-cu-haven-park-1-min.jpg" alt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="images/tienich/tien-ich-chung-cu-haven-park-2-min.jpg" alt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="images/tienich/tien-ich-chung-cu-haven-park-3-min.jpg" alt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="images/tienich/tien-ich-chung-cu-haven-park-4-min.jpg" alt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="images/tienich/tien-ich-chung-cu-haven-park-5-min.jpg" alt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="images/tienich/tien-ich-chung-cu-haven-park-6-min.jpg" alt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="images/tienich/tien-ich-chung-cu-haven-park-7-min.jpg" alt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="images/tienich/tien-ich-chung-cu-haven-park-8-min.jpg" alt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="images/tienich/tien-ich-chung-cu-haven-park-9-min.jpg" alt="" uk-cover>
+                                    </li>
+                                </ul>
+
+                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+                            </div>
+
+                            <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-position-bottom-right uk-position-small"></ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-2-5@m">
+                    <p class="home__blockTienich__desc">🍀 <span>CÔNG VIÊN THỨ 5 CỦA ECOPARK</span>: Lớn bằng công viên mùa hạ, gấp 1.5 công viên mùa thu, bằng 3/4 công viên mùa xuân</p>
+                    <p class="home__blockTienich__desc">🍀 <span>Ở ĐÓ CÓ CUỘC SỐNG NHƯ RESORT 6*</span>:</p>
+                    <div class="uk-light">
+                        <ul class="uk-list home__blockTongquan__card__list">
+                            <li>Hồ bơi ngọc bích, phòng tập gym giữa thiên nhiên</li>
+                            <li>Nhà hàng thượng uyển, phòng họp mở giữa thiên nhiên</li>
+                            <li>Vườn cỏ nhung vọng nguyệt ven hồ</li>
+                        </ul>
+                    </div>
+                    <p class="home__blockTienich__desc">🍀 <span>HỆ THỐNG GIÁO DỤC CHUẨN QUỐC TẾ</span>: Trường liên cấp Đoàn Thị Điểm, Edison, Chadwick, trường anh quốc BUV, đại học Y khoa Tokio</p>
+                    <p class="home__blockTienich__desc">🍀 <span>CÁC GIẢI THƯỞNG DANH GIÁ</span>: Khu đô thị có thiết kế cảnh quan đẹp nhất thế giới, Khu đô thị đáng sống nhất Thế Giới...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/TIỆN ÍCH ĐẶC QUYỀN DỰA THIÊN NHIÊN-->
+
+    <!--MẶT BẰNG THIẾT KẾ HAVEN PARK RESIDENCES-->
+    <div id="matbang" class="uk-section-small uk-background-muted">
+        <div class="uk-container">
+            <h2 class="uk-h2 home__block01__card2__title uk-text-center">MẶT BẰNG THIẾT KẾ HAVEN PARK RESIDENCES</h2>
+            <p class="home__blockMatbang__desc">Điểm khác biệt lớn nhất trong thiết kế dự án chung cư Haven Park đó chính là thiết kế không gian xanh ngay trong từng căn hộ “công viên trong đại công viên” mang tới không gian xanh thư giãn đầy riêng tư cho từng gia chủ. Toà tháp đôi “hoà vào làm một” với thiên nhiên, nắng, gió của Ecopark, mang đến một không gian sống – nơi con người được thiên nhiên yêu thương.</p>
+            <figure>
+                <img class="uk-width-1-1" src="images/mat-bang-tong-the-haven-park.jpg" alt="">
+            </figure>
+            <p class="uk-text-center home__blockMatbang__desc">CLICK VÀO LINK DƯỚI ĐÂY ĐỂ TẢI TRỌN BỘ MẶT BẰNG FULL HD + FILE AUTOCAD</p>
+            <div class="uk-text-center">
+                <a href="" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="home__blockVitri__btn uk-border-rounded uk-button uk-button-secondary"><span uk-icon="icon: download; ratio: 1.2"></span> LINK TẢI MẶT BẰNG + FILE CAD</a>
+            </div>
+        </div>
+    </div>
+    <!--/MẶT BẰNG THIẾT KẾ HAVEN PARK RESIDENCES-->
+
+    <!--THIẾT KẾ MAY ĐO- TỐI ƯU TỪNG MILIMET-->
+    <div id="thietke" class="uk-section-small">
+        <div class="uk-container">
+            <div class="uk-child-width-1-2@m uk-flex-center" uk-grid>
+                <div>
+                    <h2 class="uk-h2 home__block01__card2__title">THIẾT KẾ MAY ĐO- TỐI ƯU TỪNG MILIMET</h2>
+                    <p class="home__blockThietke__desc">Được thiết kế bởi những kiến trúc sư hàng đầu đến từ Callision, tổ hợp căn hộ chung cư Haven Park mang tới không gian sống giữa thiên nhiên trong lòng đại công viên Ecopark.</p>
+                    <p class="home__blockMatbang__desc">Mặt bằng khu căn hộ Haven Park Residence sẽ bao gồm 16 căn trên 1 tầng, trong đó:</p>
+                    <ul class="uk-list home__blockTongquan__card__list">
+                        <li>3 căn hộ Studio: 29.5m2</li>
+                        <li>1 căn hộ 1PN: 31m2</li>
+                        <li>6 căn hộ 2 PN – 2 WC: rộng 58m2</li>
+                        <li>2 căn hộ 2 PN – 2 WC: rộng 68m2</li>
+                        <li>4 căn hộ 3 PN – 2 WC: rộng 79m2, 86m2, 101m2 và 109m2</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-background-02 uk-light home__blockThietke__card__header">
+                            <ul class="uk-flex-center home__blockThietke__card__header__tab uk-margin-remove-bottom" uk-tab="connect: .my-class">
+                                <li><a href="#">CĂN STUDIO</a></li>
+                                <li><a href="#">CĂN 1PN</a></li>
+                                <li><a href="#">CĂN 2PN</a></li>
+                                <li><a href="#">CĂN 3PN</a></li>
+                            </ul>
+                        </div>
+                        <div class="uk-card-body uk-background-muted">
+                            <ul class="uk-switcher uk-margin my-class">
+                                <li>
+                                    <img src="images/studio-haven-park.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="images/1pn-haven-park.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="images/2pn-haven-park.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="images/3pn-haven-park.jpg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-auto">
+                    <img src="images/bang-gia-768x762.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/THIẾT KẾ MAY ĐO- TỐI ƯU TỪNG MILIMET-->
+
+    <!--ĐĂNG KÝ NHẬN BẢNG GIÁ-->
+    <div class="uk-section-small uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/bg02.jpg" uk-img>
+        <div class="uk-container">
+
+        </div>
+    </div>
+    <!--/ĐĂNG KÝ NHẬN BẢNG GIÁ-->
+</section>
 </body>
 </html>
