@@ -37,7 +37,7 @@
                             <li><a href="#tongquan">Tổng quan</a></li>
                             <li><a href="#vitri">Vị trí</a></li>
                             <li><a href="#tienich">Tiện ích</a></li>
-                            <li><a href="#">Mặt bằng</a></li>
+                            <li><a href="#matbang">Mặt bằng</a></li>
                             <li><a href="#">Thiết kế</a></li>
                             <li><a href="#">Chính sách</a></li>
                             <li><a href="#">Liên hệ</a></li>
