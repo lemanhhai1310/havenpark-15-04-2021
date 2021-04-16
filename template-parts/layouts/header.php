@@ -21,20 +21,20 @@
 <body class="<?= ($is_home) ? 'isHome' : '' ?>">
 <?php require "template-parts/commons/facebook_chat.php"; ?>
 <section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
-    <div uk-sticky>
+    <div uk-sticky="">
         <div class="header uk-background-01">
             <div class="uk-container uk-padding-remove">
                 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 
                     <div class="uk-navbar-left">
-                        <a href="" class="uk-navbar-item uk-logo header__logo"><img src="images/logo-havenpark-w.png" alt=""></a>
+                        <a href="." class="uk-navbar-item uk-logo header__logo"><img src="images/logo-havenpark-w.png" alt=""></a>
                     </div>
 
                     <div class="uk-navbar-right">
 
-                        <ul class="uk-navbar-nav uk-visible@m">
-                            <li class="uk-active"><a href="#">Trang chủ</a></li>
-                            <li><a href="#">Tổng quan</a></li>
+                        <ul class="uk-navbar-nav uk-visible@m" uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
+                            <li><a href="#home">Trang chủ</a></li>
+                            <li><a href="#tongquan">Tổng quan</a></li>
                             <li><a href="#">Vị trí</a></li>
                             <li><a href="#">Tiện ích</a></li>
                             <li><a href="#">Mặt bằng</a></li>

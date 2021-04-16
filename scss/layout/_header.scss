@@ -7,6 +7,11 @@
   }
   .uk-navbar-nav{
     >li{
+      &.uk-active{
+        >a{
+          color: $color2;
+        }
+      }
       >a{
         color: #ffffff;
         @extend .fz-15;

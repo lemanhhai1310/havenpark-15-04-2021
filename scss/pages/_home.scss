@@ -14,8 +14,60 @@
       color: $color2;
       @extend .fz-27;
       line-height: (33/27);
-      margin-bottom: 10px;
+      margin-bottom: 25px !important;
       font-family: $font-Roboto-Medium;
+    }
+    &__btn{
+      @extend .fz-16;
+      font-family: $font-Roboto-Medium;
+      background: $color1 !important;
+      color: $color2 !important;
+      transition: all 0.5s;
+      border-radius: 3px;
+      border: 2px solid $color2;
+      animation: pulsems 2s infinite 3s cubic-bezier(.25,0,0,1);
+      box-shadow: 0 0 0 0 $color2;
+    }
+  }
+  &__block01{
+    &__card1{
+      padding: 8px;
+    }
+    &__card2{
+      border: 8px double #D2B465;
+      &__title{
+        @extend .fz-26;
+        color: $color2 !important;
+        font-family: $font-Roboto-Black;
+        line-height: (36.4/26);
+        &--c1{
+          @extend .fz-24;
+        }
+      }
+
+    }
+  }
+  &__blockTongquan{
+    &__card{
+      background: #2C3A2DAD;
+      &__desc{
+        @extend .fz-19;
+        font-family: $font-Roboto-Black;
+        color: #ffffff !important;
+      }
+      &__list{
+        >li{
+          background: url(images/dot.png);
+          background-repeat: no-repeat;
+          background-position: 0 3px;
+          padding-left: 25px;
+          @extend .fz-15;
+          color: #ffffff !important;
+          span{
+            font-family: $font-Roboto-Black;
+          }
+        }
+      }
     }
   }
 }
