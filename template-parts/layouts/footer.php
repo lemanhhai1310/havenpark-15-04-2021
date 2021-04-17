@@ -35,7 +35,7 @@
 <div class="footer__neo uk-position-fixed uk-position-bottom uk-background-01">
     <div class="uk-container">
         <div class="uk-child-width-auto uk-flex-center uk-flex-middle uk-grid-small uk-grid-30-m" uk-grid>
-            <div>
+            <div class="uk-visible@m">
                 <div class="uk-grid-5 uk-flex-middle" uk-grid>
                     <div>
                         <img style="width: 70px;height: 21px;object-fit: cover" src="images/hinhanh/hot_icon.gif" alt="">

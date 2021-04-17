@@ -3,6 +3,9 @@
     &__overlay{
       background: rgba(0,0,0,.45);
     }
+    &__bg{
+      background-position: 81% 50% !important;
+    }
     &__title{
       line-height: (44/34);
       @extend .fz-34;

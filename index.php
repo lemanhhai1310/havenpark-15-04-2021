@@ -2,11 +2,12 @@
 <?php $is_home = true; ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <!--Slider-->
-<div id="home" class="home__slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push;ratio: 1400:789;min-height: 400; max-height: 560">
+<div id="home" class="home__slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push;ratio: 1400:789;min-height: 633; max-height: 560">
 
     <ul class="uk-slideshow-items" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: .animation > *; delay: 500; repeat: true">
         <li>
-            <div uk-parallax="bgy: -200" class="uk-position-cover uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/chung-cu-haven-park-1.jpg" uk-img></div>
+            <div uk-parallax="bgy: -200" class="uk-visible@m uk-position-cover uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/chung-cu-haven-park-1.jpg" uk-img></div>
+            <div class="uk-hidden@m home__slider__bg uk-position-cover uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/chung-cu-haven-park-11.jpg" uk-img></div>
             <div class="uk-position-cover home__slider__overlay"></div>
             <div class="uk-position-center uk-position-small uk-text-center animation">
                 <h2 class="uk-h2 home__slider__title uk-margin-remove">HAVEN PARK RESIDENCES ECOPARK</h2>
@@ -15,7 +16,8 @@
             </div>
         </li>
         <li>
-            <div uk-parallax="bgy: -200" class="uk-position-cover uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/chung-cu-haven-park-2.jpg" uk-img></div>
+            <div uk-parallax="bgy: -200" class="uk-visible@m uk-position-cover uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/chung-cu-haven-park-2.jpg" uk-img></div>
+            <div class="uk-hidden@m home__slider__bg uk-position-cover uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/chung-cu-haven-park-11.jpg" uk-img></div>
             <div class="uk-position-cover home__slider__overlay"></div>
             <div class="uk-position-center uk-position-small uk-text-center animation">
                 <h2 class="uk-h2 home__slider__title uk-margin-remove">HAVEN PARK RESIDENCES ECOPARK</h2>
