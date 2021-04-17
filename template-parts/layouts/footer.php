@@ -54,32 +54,248 @@
 </section>
 
 <!-- This is the modal with the outside close button -->
-<div id="modal-dky-outside" class="uk-flex-top" uk-modal>
-    <div class="uk-modal-dialog modal__dialog uk-modal-body uk-margin-auto-vertical">
+<div id="modal-dky-outside" class="" uk-modal>
+    <div class="uk-modal-dialog modal__dialog uk-modal-body uk-position-relative">
+        <div id="loader" class="uk-position-cover uk-overlay uk-overlay-default">
+            <div class="uk-position-center" uk-spinner></div>
+        </div>
         <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <form>
+        <form id="contact_form" name="registration">
             <fieldset class="uk-fieldset">
                 <legend class="uk-legend modal__title">ĐĂNG KÝ NHẬN TƯ VẤN CHI TIẾT</legend>
                 <p class="modal__desc">Tư vấn chi tiết dự án Haven Park 👉 chọn căn, chọn tầng, nhận chi tiết mặt bằng, báo giá và chính sách khuyến mãi TRỰC TIẾP CĐT</p>
                 <div class="uk-margin-small">
-                    <input uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="text" placeholder="Họ tên*">
+                    <input name="fname" id="fname" uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="text" placeholder="Họ tên*">
                 </div>
                 <div class="uk-margin-small">
-                    <input uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="text" placeholder="Email*">
+                    <input name="femail" id="femail" uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="email" placeholder="Email*">
                 </div>
                 <div class="uk-margin-small">
-                    <input uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="text" placeholder="Số điện thoại*">
+                    <input name="fphone" id="fphone" uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="tel" placeholder="Số điện thoại*">
                 </div>
+                <!--
                 <button type="submit" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="uk-button uk-button-secondary uk-width-1-1 home__blockDangky__btn">NHẬN NGAY</button>
+                -->
+                <input type="submit" id="submit" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="uk-button uk-button-secondary uk-width-1-1 home__blockDangky__btn" value="NHẬN NGAY" name="send"/>
             </fieldset>
         </form>
     </div>
 </div>
 
 <script>
+    $(document).ready(function() {
+        $('#loader').hide();
+        $('#loader_banggia').hide();
+        $('#loader-chinhsach').hide();
+    });
+
     setTimeout(function(){
         UIkit.modal('#modal-dky-outside').show();
     }, 7000);
+
+    $(function() {
+        // Initialize form validation on the registration form.
+        // It has the name attribute "registration"
+        $("form[name='registration']").validate({
+            // Specify validation rules
+            rules: {
+                // The key name on the left side is the name attribute
+                // of an input field. Validation rules are defined
+                // on the right side
+                fname: "required",
+                femail: {
+                    required: true,
+                    // Specify that email should be validated
+                    // by the built-in "email" rule
+                    email: true
+                },
+                fphone: {
+                    required: true,
+                    minlength: 10
+                }
+            },
+            // Specify validation error messages
+            messages: {
+                fname: "Please enter your name",
+                fphone: {
+                    required: "Please provide a phone",
+                    minlength: "Your phone must be at least 10 characters long"
+                },
+                femail: "Please enter a valid email address"
+            },
+            // Make sure the form is submitted to the destination defined
+            // in the "action" attribute of the form when valid
+            submitHandler: function(form) {
+                var fname = $("#fname").val();
+                var fngaysinh = $("#fngaysinh").val();
+                var fphone = $("#fphone").val();
+                var femail = $("#femail").val();
+                var fsubject = 'Thông tin thành viên đăng ký mới';
+                var button = $("#submit").val();
+                var dataString = 'fngaysinh=' + fngaysinh + '&fname=' + fname + '&fphone=' + fphone + '&femail=' + femail + '&button=' + button + '&fsubject=' + fsubject;
+
+                //validation
+                if (fname == '' || fphone == '' || femail == '') { //if you are use other form validation scripts remove the if statement
+                    alert("Please fill all fields");
+                }
+                // AJAX Code To Submit Form.
+                else {
+                    $('#loader').show();
+                    $.ajax({
+                        type: "POST",
+                        url: "send-mailer.php",
+                        data: dataString,
+                        cache: false,
+                        success: function(result) {
+                            $('#loader').hide();
+                            $("#contact_form")[0].reset();
+                            UIkit.modal('#modal-dky-outside').hide();
+
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'The e-mail has been sent successfully!',
+                            })
+                        }
+                    });
+                }
+                return false;
+            }
+        });
+
+        //ĐĂNG KÝ NHẬN BẢNG GIÁ
+        $("form[name='registration-banggia']").validate({
+            // Specify validation rules
+            rules: {
+                // The key name on the left side is the name attribute
+                // of an input field. Validation rules are defined
+                // on the right side
+                fname: "required",
+                femail: {
+                    required: true,
+                    // Specify that email should be validated
+                    // by the built-in "email" rule
+                    email: true
+                },
+                fphone: {
+                    required: true,
+                    minlength: 10
+                }
+            },
+            // Specify validation error messages
+            messages: {
+                fname: "Please enter your name",
+                fphone: {
+                    required: "Please provide a phone",
+                    minlength: "Your phone must be at least 10 characters long"
+                },
+                femail: "Please enter a valid email address"
+            },
+            // Make sure the form is submitted to the destination defined
+            // in the "action" attribute of the form when valid
+            submitHandler: function(form) {
+                var fname = $("#fname-banggia").val();
+                var fngaysinh = $("#fngaysinh-banggia").val();
+                var fphone = $("#fphone-banggia").val();
+                var femail = $("#femail-banggia").val();
+                var fsubject = 'Thông tin thành viên đăng ký mới';
+                var button = $("#submit").val();
+                var dataString = 'fngaysinh=' + fngaysinh + '&fname=' + fname + '&fphone=' + fphone + '&femail=' + femail + '&button=' + button + '&fsubject=' + fsubject;
+
+                //validation
+                if (fname == '' || fphone == '' || femail == '') { //if you are use other form validation scripts remove the if statement
+                    alert("Please fill all fields");
+                }
+                // AJAX Code To Submit Form.
+                else {
+                    $('#loader_banggia').show();
+                    $.ajax({
+                        type: "POST",
+                        url: "send-mailer.php",
+                        data: dataString,
+                        cache: false,
+                        success: function(result) {
+                            $('#loader_banggia').hide();
+                            $("#contact_form_banggia")[0].reset();
+                            UIkit.modal('#modal-dky-outside').hide();
+
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'The e-mail has been sent successfully!',
+                            })
+                        }
+                    });
+                }
+                return false;
+            }
+        });
+
+        //CHÍNH SÁCH BÁN HÀNG & GIÁ BÁN
+        $("form[name='registration-chinhsach']").validate({
+            // Specify validation rules
+            rules: {
+                // The key name on the left side is the name attribute
+                // of an input field. Validation rules are defined
+                // on the right side
+                fname: "required",
+                femail: {
+                    required: true,
+                    // Specify that email should be validated
+                    // by the built-in "email" rule
+                    email: true
+                },
+                fphone: {
+                    required: true,
+                    minlength: 10
+                }
+            },
+            // Specify validation error messages
+            messages: {
+                fname: "Please enter your name",
+                fphone: {
+                    required: "Please provide a phone",
+                    minlength: "Your phone must be at least 10 characters long"
+                },
+                femail: "Please enter a valid email address"
+            },
+            // Make sure the form is submitted to the destination defined
+            // in the "action" attribute of the form when valid
+            submitHandler: function(form) {
+                var fname = $("#fname_chinhsach").val();
+                var fngaysinh = $("#fngaysinh").val();
+                var fphone = $("#fphone_chinhsach").val();
+                var femail = $("#femail_chinhsach").val();
+                var fsubject = 'Thông tin thành viên đăng ký mới';
+                var button = $("#submit").val();
+                var dataString = 'fngaysinh=' + fngaysinh + '&fname=' + fname + '&fphone=' + fphone + '&femail=' + femail + '&button=' + button + '&fsubject=' + fsubject;
+
+                //validation
+                if (fname == '' || fphone == '' || femail == '') { //if you are use other form validation scripts remove the if statement
+                    alert("Please fill all fields");
+                }
+                // AJAX Code To Submit Form.
+                else {
+                    $('#loader-chinhsach').show();
+                    $.ajax({
+                        type: "POST",
+                        url: "send-mailer.php",
+                        data: dataString,
+                        cache: false,
+                        success: function(result) {
+                            $('#loader-chinhsach').hide();
+                            $("#contact_form_chinhsach")[0].reset();
+                            UIkit.modal('#modal-dky-outside').hide();
+
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'The e-mail has been sent successfully!',
+                            })
+                        }
+                    });
+                }
+                return false;
+            }
+        });
+    });
 </script>
 </body>
 </html>

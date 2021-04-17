@@ -230,21 +230,27 @@
 <!--/THIẾT KẾ MAY ĐO- TỐI ƯU TỪNG MILIMET-->
 
 <!--ĐĂNG KÝ NHẬN BẢNG GIÁ-->
-<div class="home__blockDangky uk-section-small uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/bg02.jpg" uk-img>
+<div class="uk-position-relative home__blockDangky uk-section-small uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/bg02.jpg" uk-img>
+    <div id="loader_banggia" class="uk-position-cover uk-overlay uk-overlay-default">
+        <div class="uk-position-center" uk-spinner></div>
+    </div>
     <div class="uk-container">
         <h2 class="uk-h2 home__block01__card2__title uk-text-center">ĐĂNG KÝ NHẬN BẢNG GIÁ</h2>
-        <form class="uk-grid-small uk-grid-30-m" uk-grid>
+        <form id="contact_form_banggia" class="uk-grid-small uk-grid-30-m" name="registration-banggia" uk-grid>
             <div class="uk-width-1-4@s">
-                <input uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="text" placeholder="Họ tên">
+                <input name="fname" id="fname-banggia" uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="text" placeholder="Họ tên">
             </div>
             <div class="uk-width-1-4@s">
-                <input uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="text" placeholder="Điện thoại">
+                <input name="fphone" id="fphone-banggia" uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="tel" placeholder="Điện thoại">
             </div>
             <div class="uk-width-1-4@s">
-                <input uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="text" placeholder="Email">
+                <input name="femail" id="femail-banggia" uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="email" placeholder="Email">
             </div>
             <div class="uk-width-1-4@s">
+                <input type="submit" id="submit-banggia" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="uk-button uk-button-secondary uk-width-1-1 home__blockDangky__btn" value="NHẬN NGAY" name="send"/>
+                <!--
                 <button type="submit" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="uk-button uk-button-secondary uk-width-1-1 home__blockDangky__btn">NHẬN NGAY</button>
+                -->
             </div>
         </form>
     </div>
@@ -299,21 +305,27 @@
                 </figure>
             </div>
             <div class="uk-width-1-3@m">
-                <div class="uk-card uk-box-shadow-small uk-background-muted uk-card-body uk-border-rounded">
-                    <form>
+                <div class="uk-card uk-box-shadow-small uk-background-muted uk-card-body uk-border-rounded uk-position-relative">
+                    <div id="loader-chinhsach" class="uk-position-cover uk-overlay uk-overlay-default">
+                        <div class="uk-position-center" uk-spinner></div>
+                    </div>
+                    <form id="contact_form_chinhsach" name="registration-chinhsach">
                         <fieldset class="uk-fieldset">
                             <legend class="uk-legend home__blockChinhsach__Form__title uk-text-center">ĐĂNG KÝ ĐỂ NHẬN NGAY BẢNG GIÁ & THÔNG TIN DỰ ÁN</legend>
                             <p class="home__blockChinhsach__Form__desc uk-text-center">Căn đẹp đúng ý, giá tốt nhất thị trường</p>
                             <div class="uk-margin">
-                                <input uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="text" placeholder="Họ tên*">
+                                <input name="fname" id="fname_chinhsach" uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="text" placeholder="Họ tên*">
                             </div>
                             <div class="uk-margin">
-                                <input uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="text" placeholder="Email*">
+                                <input name="femail" id="femail_chinhsach" uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="email" placeholder="Email*">
                             </div>
                             <div class="uk-margin">
-                                <input uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="text" placeholder="Số điện thoại*">
+                                <input name="fphone" id="fphone_chinhsach" uk-toggle="cls: uk-form-large; mode: media; media: @m" class="uk-input home__blockDangky__input" type="tel" placeholder="Số điện thoại*">
                             </div>
+                            <input type="submit" id="submit" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="uk-button uk-button-secondary uk-width-1-1 home__blockDangky__btn" value="NHẬN NGAY" name="send"/>
+                            <!--
                             <button type="submit" uk-toggle="cls: uk-button-large; mode: media; media: @m" class="uk-button uk-button-secondary uk-width-1-1 home__blockDangky__btn">NHẬN NGAY</button>
+                            -->
                         </fieldset>
                     </form>
                 </div>

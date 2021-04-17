@@ -18,3 +18,7 @@
     color: #ffffff;
   }
 }
+.error{
+  color: red;
+  @extend .fz-12;
+}
